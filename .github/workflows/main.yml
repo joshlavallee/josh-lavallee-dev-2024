@@ -22,7 +22,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Install Modules
-        run: yarn ci
+        run: npm ci
 
       - name: Build Application
         run: yarn run build
