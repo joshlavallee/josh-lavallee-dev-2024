@@ -14,9 +14,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Run a one-line script
-        run: Starting AWS Build Process
-
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v1
         with:
