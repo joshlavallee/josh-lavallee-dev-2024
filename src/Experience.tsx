@@ -16,16 +16,27 @@ function Experience() {
     });
 
     return (
+        <>
+        <mesh
+            // rotation={[0,0,0]}
+            scale={.75}
+            position={[-3, 0, 0]}
+        >
+            <sphereGeometry />
+            <meshBasicMaterial color={"purple"}/>
+        </mesh>
+            
         <mesh
             ref={cube}
-            scale={clicked ? 1.5 : 1}
+            scale={clicked ? 2 : 1}
             onClick={() => click(!clicked)}
             onPointerOver={(event) => (event.stopPropagation(), hover(true))}
             onPointerOut={() => hover(false)}
         >
-            <boxGeometry args={[1, 1, 1]} />
-            {hovered ? <meshNormalMaterial /> : <meshStandardMaterial color="hotpink" />}
+            <boxGeometry />
+            {hovered ? <meshBasicMaterial color={"purple"}/> : <meshBasicMaterial color={"yellow"} />}
         </mesh>
+        </>
     );
 }
 
