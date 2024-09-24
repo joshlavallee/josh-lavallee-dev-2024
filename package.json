@@ -13,6 +13,9 @@
     "@react-three/drei": "^9.88.7",
     "@react-three/fiber": "^8.15.7",
     "@types/three": "^0.157.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.157.0"
